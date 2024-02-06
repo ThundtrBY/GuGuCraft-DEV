@@ -1,0 +1,116 @@
+ServerEvents.recipes(event =>{
+  event.custom({
+    "type": "create:sequenced_assembly",
+    "ingredient": [
+      {
+        "item": "minecraft:glass"
+      }
+    ],
+    "loops": 100,
+    "results": [
+      {
+        "item": "kubejs:reinforced_glass"
+      }
+    ],
+    "sequence": [
+      {
+        "type": "create:pressing",
+        "ingredients": [
+          {
+            "item": "kubejs:incomplete_reinforced_glass"
+          }
+        ],
+        "results": [
+          {
+            "item": "kubejs:incomplete_reinforced_glass"
+          }
+        ]
+      }
+    ],
+    "transitionalItem": {
+          "item": "kubejs:incomplete_reinforced_glass"
+        }
+  })
+    event.custom({
+        "type": "create:sequenced_assembly",
+        "ingredient": {
+          "tag": "forge:paper"
+        },
+        "loops": 5,
+        "results": [
+          {
+            "item": "kubejs:platinum_assembly"
+          }
+        ],
+        "sequence": [
+          {
+            "type": "create:deploying",
+            "ingredients": [
+              {
+                "item": "kubejs:incomplete_assembly"
+              },
+              {
+                "item": "kubejs:platinum_ingot"
+              }
+            ],
+            "results": [
+              {
+                "item": "kubejs:incomplete_assembly"
+              }
+            ]
+          },
+          {
+            "type": "create:deploying",
+            "ingredients": [
+              {
+                "item": "kubejs:incomplete_assembly"
+              },
+              {
+                "item": "kubejs:platinum_ingot"
+              }
+            ],
+            "results": [
+              {
+                "item": "kubejs:incomplete_assembly"
+              }
+            ]
+          },
+          {
+            "type": "create:pressing",
+            "ingredients": [
+              {
+                "item": "kubejs:incomplete_assembly"
+              }
+            ],
+            "results": [
+              {
+                "item": "kubejs:incomplete_assembly"
+              }
+            ]
+          }
+        ],
+        "transitionalItem": {
+          "item": "kubejs:incomplete_assembly"
+        }
+  })
+  event.custom({
+    "type": "create:compacting",
+    "heatRequirement": "superheated",
+    "ingredients": [
+      {
+        "item": "minecraft:moss_block"
+      },
+      {
+        "amount": 100,
+        "fluid": "ad_astra:oil",
+        "nbt": {}
+      }
+    ],
+    "results": [
+      {
+        "item": "kubejs:rubber",
+      }
+    ]
+  })
+  event.smelting('kubejs:cured_rubber','kubejs:rubber')
+})

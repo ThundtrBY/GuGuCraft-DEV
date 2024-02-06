@@ -1,0 +1,58 @@
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: CustomSkinLoader 14.17
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: DataDir: F:\Minecraft\.minecraft\versions\dev4720\CustomSkinLoader
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: Operating System: Windows 11 (amd64) version 10.0
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: Java Version: 17.0.7, Oracle Corporation
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: Minecraft: unknown
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: Config File: F:\Minecraft\.minecraft\versions\dev4720\CustomSkinLoader\CustomSkinLoader.json
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: Try to load config.
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: Successfully load config.
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: MojangAPI
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: Legacy
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: CustomSkinAPI
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: CustomSKinAPIPlus
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: UniSkinAPI
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: ElyByAPI
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: GlitchlessAPI
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: MinecraftCapesAPI
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: WynntilsAPI
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: Successfully update config.
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: version : 14.17
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: buildNumber : 12
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: loadlist : [{ "name": "Mojang", "type": "MojangAPI", "apiRoot": "https://api.mojang.com/", "sessionRoot": "https://sessionserver.mojang.com/" }, { "name": "LittleSkin", "type": "CustomSkinAPI", "root": "https://littleskin.cn/csl/" }, { "name": "BlessingSkin", "type": "CustomSkinAPI", "root": "https://skin.prinzeugen.net/" }, { "name": "ElyBy", "type": "ElyByAPI", "root": "http://skinsystem.ely.by/textures/" }, { "name": "SkinMe", "type": "UniSkinAPI", "root": "http://www.skinme.cc/uniskin/" }, { "name": "TLauncher", "type": "ElyByAPI", "root": "https://auth.tlauncher.org/skin/profile/texture/login/" }, { "name": "GlitchlessGames", "type": "GlitchlessAPI", "root": "https://games.glitchless.ru/api/minecraft/users/profiles/textures/?nickname=" }, { "name": "LocalSkin", "type": "Legacy", "checkPNG": "false", "skin": "LocalSkin/skins/{USERNAME}.png", "model": "auto", "cape": "LocalSkin/capes/{USERNAME}.png", "elytra": "LocalSkin/elytras/{USERNAME}.png" }, { "name": "MinecraftCapes", "type": "MinecraftCapesAPI", "root": "https://minecraftcapes.net/profile/" }, { "name": "OptiFine", "type": "Legacy", "checkPNG": "false", "model": "auto", "cape": "https://optifine.net/capes/{USERNAME}.png" }, { "name": "Wynntils", "type": "WynntilsAPI", "root": "https://athena.wynntils.com/user/getInfo" }, { "name": "CloakPlus", "type": "Legacy", "checkPNG": "false", "model": "auto", "cape": "http://161.35.130.99/capes/{USERNAME}.png" }, { "name": "LabyMod", "type": "Legacy", "checkPNG": "false", "model": "auto", "cape": "https://dl.labymod.net/capes/{STANDARD_UUID}" }, { "name": "Cosmetica", "type": "Legacy", "checkPNG": "false", "model": "auto", "cape": "https://api.cosmetica.cc/get/cloak?username={USERNAME}&uuid={STANDARD_UUID}&nothirdparty" }]
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: enableDynamicSkull : true
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: enableTransparentSkin : true
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: forceIgnoreHttpsCertificate : false
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: forceLoadAllTextures : true
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: enableCape : true
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: threadPoolSize : 8
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: enableLogStdOut : false
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: cacheExpiry : 30
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: forceUpdateSkull : false
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: enableLocalProfileCache : false
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: enableCacheAutoClean : false
+[2024-02-06 15:40:52] [Render thread/INFO] [CustomSkinLoader Core]: forceDisableCache : false
+[2024-02-06 15:40:52] [MudRocKk_/INFO] [CustomSkinLoader Core]: Loading MudRocKk_'s profile.
+[2024-02-06 15:40:52] [MudRocKk_/INFO] [CustomSkinLoader Core]: 1/14 Try to load profile from 'Mojang'.
+[2024-02-06 15:40:52] [MudRocKk_/DEBUG] [CustomSkinLoader Core]: Try to request 'https://api.mojang.com/profiles/minecraft'.
+[2024-02-06 15:40:52] [MudRocKk_/INFO] [CustomSkinLoader Core]: Payload: ["MudRocKk_"]
+[2024-02-06 15:40:53] [MudRocKk_/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 200 , Content Length: 75)
+[2024-02-06 15:40:53] [MudRocKk_/DEBUG] [CustomSkinLoader Core]: Content: [ {
+  "id" : "589aa91650b344e2ab09214a4a2284ae",
+  "name" : "MudRocKk_"
+} ]
+[2024-02-06 15:40:53] [MudRocKk_/DEBUG] [CustomSkinLoader Core]: Try to request 'https://sessionserver.mojang.com/session/minecraft/profile/589aa91650b344e2ab09214a4a2284ae'.
+[2024-02-06 15:40:54] [MudRocKk_/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 200 , Content Length: 799)
+[2024-02-06 15:40:54] [MudRocKk_/DEBUG] [CustomSkinLoader Core]: Saved to cache (Length: 799 , Path: 'F:\Minecraft\.minecraft\versions\dev4720\CustomSkinLoader\caches\82eee93fd7286e8260a88d0a955c9f8a66bcc787' , Expire: 1707205284)
+[2024-02-06 15:40:54] [MudRocKk_/DEBUG] [CustomSkinLoader Core]: Content: {
+  "id" : "589aa91650b344e2ab09214a4a2284ae",
+  "name" : "MudRocKk_",
+  "properties" : [ {
+    "name" : "textures",
+    "value" : "ewogICJ0aW1lc3RhbXAiIDogMTcwNzIwNTI1NTg0OSwKICAicHJvZmlsZUlkIiA6ICI1ODlhYTkxNjUwYjM0NGUyYWIwOTIxNGE0YTIyODRhZSIsCiAgInByb2ZpbGVOYW1lIiA6ICJNdWRSb2NLa18iLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGQ0MTM0OTliMDBkOTQzYjliNWU2N2RjOWMxZjBlNzk5YjU2MDU3YTRiNmM0MzRkMjgzNmU3MDk5NDgxYWIzIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjlhNzY1Mzc2NDc5ODlmOWEwYjZkMDAxZTMyMGRhYzU5MWMzNTllOWU2MWEzMWY0Y2UxMWM4OGYyMDdmMGFkNCIKICAgIH0KICB9Cn0="
+  } ],
+  "profileActions" : [ ]
+}
+[2024-02-06 15:40:54] [MudRocKk_/INFO] [CustomSkinLoader Core]: MudRocKk_'s profile loaded.
+[2024-02-06 15:40:54] [MudRocKk_/INFO] [CustomSkinLoader Core]: (SkinUrl: http://textures.minecraft.net/texture/8d413499b00d943b9b5e67dc9c1f0e799b56057a4b6c434d2836e7099481ab3 , Model: slim , CapeUrl: http://textures.minecraft.net/texture/f9a76537647989f9a0b6d001e320dac591c359e9e61a31f4ce11c88f207f0ad4  , Expiry: 1707205284)
+4  , Expiry: 1705303446)

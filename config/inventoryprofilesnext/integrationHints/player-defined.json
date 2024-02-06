@@ -1,0 +1,20 @@
+{
+    "net.minecraft.client.gui.screens.inventory.InventoryScreen": {
+        "buttonHints": {
+            "SHOW_EDITOR": {
+                "horizontalOffset": 178,
+                "top": -5
+            },
+            "SETTINGS": {
+                "horizontalOffset": 161,
+                "top": -20
+            }
+        }
+    },
+    "com.simibubi.create.content.schematics.table.SchematicTableScreen": {
+        "ignore": true
+    },
+    "com.simibubi.create.content.schematics.table.SchematicTableMenu": {
+        "ignore": true
+    }
+}

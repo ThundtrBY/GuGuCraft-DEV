@@ -1,0 +1,80 @@
+{
+	/* Default Generators
+	   {
+	     "id": "mod_id:block_id",
+	     "weight": 95.5,
+	     "dimensions": [
+	       "mod_id:dimension_id",
+	       "mod_id:dimension_id"
+	     ],
+	     "excludedDimensions": [
+	       "mod_id:dimension_id",
+	       "mod_id:dimension_id"
+	     ],
+	     "minY": 0,
+	     "maxY": 69
+	   }
+	*/
+	/* Custom Generators
+	   <stoneGen|cobbleGen|basaltGen>: {
+	     "mod_id:modifier_block_id": [
+	       {
+	         "id": "mod_id:block_id",
+	         "weight": 95.5,
+	         "dimensions": [
+	           "mod_id:dimension_id",
+	           "mod_id:dimension_id"
+	         ],
+	         "excludedDimensions": [
+	           "mod_id:dimension_id",
+	           "mod_id:dimension_id"
+	         ],
+	         "minY": 0,
+	         "maxY": 69
+	       },
+	       ...
+	     ]
+	   }
+	*/
+	"customGen": {
+		"cobbleGen": {
+			"minecraft:bedrock": [
+				{
+					"id": "ad_astra:moon_cobblestone",
+					"weight": 8.0,
+					"dimensions": [
+	           		"ad_astra:moon"
+	             	],
+				},
+				{
+					"id": "ad_astra:moon_cheese_ore",
+					"weight": 0.8,
+					"dimensions": [
+	           		"ad_astra:moon"
+	             	],
+				},
+				{
+					"id": "ad_astra:moon_iron_ore",
+					"weight": 0.8,
+					"dimensions": [
+	           		"ad_astra:moon"
+	             	],
+				},
+				{
+					"id": "ad_astra:moon_desh_ore",
+					"weight": 0.3,
+					"dimensions": [
+	           		"ad_astra:moon"
+	             	],
+				},
+				{
+					"id": "kubejs:sheldonite_ore",
+					"weight": 0.1,
+					"dimensions": [
+	           		"ad_astra:moon"
+	             	],
+				},
+			],
+		},
+	},
+}

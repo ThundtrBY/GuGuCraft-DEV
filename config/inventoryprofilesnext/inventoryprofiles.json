@@ -1,0 +1,44 @@
+{
+    "ModSettings": {
+        "highlight_foused_items": {
+            "value": false
+        },
+        "highlight_foused_items_foreground": false,
+        "enable_lock_slots": {
+            "value": false
+        },
+        "enable_lock_slots_per_server": false,
+        "enable_auto_refill": {
+            "value": false
+        },
+        "first_run": false
+    },
+    "GuiSettings": {
+        "continuous_crafting_saved_value": false
+    },
+    "LockedSlotsSettings": {
+        "locked_slots_empty_hotbar_as_semi_locked": {
+            "value": false
+        }
+    },
+    "AutoRefillSettings": {
+        "ignore_locked_slots": false
+    },
+    "Hotkeys": {
+        "sort_inventory": {
+            "main": {
+                "keys": "BUTTON_3"
+            }
+        },
+        "scroll_to_chest": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "scroll_to_inventory": {
+            "main": {
+                "keys": ""
+            }
+        }
+    }
+}
