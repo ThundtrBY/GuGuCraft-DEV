@@ -1,1 +1,1 @@
-Just a modpack for GuGuCraft server!
+Just a modpack for GuGuCraft server
