@@ -11,5 +11,8 @@ StartupEvents.registry('fluid', e => {
       .flowingTexture('kubejs:block/fluid/resin_flow')
       .stillTexture('kubejs:block/fluid/resin_flow')
       .displayName('树脂')
-
+    e.create('molten_redstone')
+      .noBucket()
+      .thickTexture(0xFF0000)
+      .displayName('熔融红石') 
 })
