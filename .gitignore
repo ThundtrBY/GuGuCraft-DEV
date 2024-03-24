@@ -30,8 +30,11 @@ config/xaerominimap_entities.json
 config/jade/sort-order.json
 config/xaerominimap_entities.json
 config/oculus.properties
-config/jei/
-config/fabric/
+config/jei/*
+config/fabric/*
 config/oculus.properties
 config/xaerominimap_entities.json
-config/InventoryHUD/
+config/InventoryHUD/*
+config/xaerominimap_entities.json
+config/jade/*
+config/InventoryHUD/*

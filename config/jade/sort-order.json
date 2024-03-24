@@ -88,6 +88,7 @@
   "create:filter": null,
   "create:goggles": null,
   "fruitfulfun:inspector": null,
+  "fruitfulfun:inspector_block": null,
   "fruitfulfun:crop_progress": null,
   "waystones:waystone": null,
   "minecraft:brewing_stand": null,
@@ -146,6 +147,9 @@
   "ae2:part_icon": null,
   "ae2:part_tooltip": null,
   "ae2:part_mod_name": null,
+  "supplementaries:present": null,
+  "supplementaries:safe": null,
+  "supplementaries:hat_stand": null,
   "drinkbeer:beer_barrel": null,
   "drinkbeer:trade_box": null,
   "drinkbeer:mixed_beer": null
