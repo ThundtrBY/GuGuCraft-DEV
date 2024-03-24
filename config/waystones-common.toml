@@ -124,8 +124,6 @@
 [client]
 	#If enabled, the text overlay on waystones will no longer always render at full brightness.
 	disableTextGlow = false
-	#If enabled, activated waystones will not emit particles.
-	disableParticles = false
 
 [compatibility]
 	#If enabled, JourneyMap waypoints will be created for each activated waystone.
