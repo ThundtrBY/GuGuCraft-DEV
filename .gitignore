@@ -27,7 +27,6 @@ mods/probejs-5.9.3-forge.jar
 .vscode/
 config/oculus.properties
 config/xaerominimap_entities.json
-config/jei/world/
 config/jade/sort-order.json
 config/xaerominimap_entities.json
 config/oculus.properties
@@ -36,4 +35,3 @@ config/fabric/
 config/oculus.properties
 config/xaerominimap_entities.json
 config/InventoryHUD/
-config/jei/
