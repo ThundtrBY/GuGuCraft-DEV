@@ -4,6 +4,9 @@
             "value": false
         },
         "highlight_foused_items_foreground": false,
+        "enable_profiles": {
+            "value": false
+        },
         "enable_lock_slots": {
             "value": false
         },

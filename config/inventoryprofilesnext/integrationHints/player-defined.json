@@ -16,5 +16,8 @@
     },
     "com.simibubi.create.content.schematics.table.SchematicTableMenu": {
         "ignore": true
+    },
+    "se.mickelus.tetra.blocks.workbench.gui.WorkbenchScreen": {
+        "ignore": true
     }
 }

@@ -22,17 +22,6 @@
         "value": 2048
       }
     },
-    "minecraft:generic.flying_speed": {
-      "enabled": true,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
     "forge:nametag_distance": {
       "enabled": false,
       "min": {
@@ -53,28 +42,6 @@
       "max": {
         "default": 1024,
         "value": 1024
-      }
-    },
-    "minecraft:generic.movement_speed": {
-      "enabled": true,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
-    "caelus:fall_flying": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1,
-        "value": 1
       }
     },
     "forge:entity_gravity": {
@@ -99,15 +66,15 @@
         "value": 1024
       }
     },
-    "minecraft:generic.max_health": {
-      "enabled": true,
+    "tetra:ability_damage": {
+      "enabled": false,
       "min": {
-        "default": 1,
-        "value": 1
+        "default": 0,
+        "value": 0
       },
       "max": {
-        "default": 1024,
-        "value": 1000000
+        "default": 2048,
+        "value": 2048
       }
     },
     "minecraft:generic.attack_speed": {
@@ -143,6 +110,83 @@
         "value": 1024
       }
     },
+    "minecraft:generic.armor": {
+      "enabled": true,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 30,
+        "value": 1000000
+      }
+    },
+    "forge:entity_reach": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "minecraft:generic.flying_speed": {
+      "enabled": true,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "tetra:draw_strength": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
+      }
+    },
+    "minecraft:generic.movement_speed": {
+      "enabled": true,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "caelus:fall_flying": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "minecraft:generic.max_health": {
+      "enabled": true,
+      "min": {
+        "default": 1,
+        "value": 1
+      },
+      "max": {
+        "default": 1024,
+        "value": 1000000
+      }
+    },
     "minecraft:zombie.spawn_reinforcements": {
       "enabled": true,
       "min": {
@@ -173,17 +217,6 @@
       },
       "max": {
         "default": 5,
-        "value": 1000000
-      }
-    },
-    "minecraft:generic.armor": {
-      "enabled": true,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 30,
         "value": 1000000
       }
     },
@@ -220,15 +253,15 @@
         "value": 1000000
       }
     },
-    "forge:entity_reach": {
+    "tetra:draw_speed": {
       "enabled": false,
       "min": {
         "default": 0,
         "value": 0
       },
       "max": {
-        "default": 1024,
-        "value": 1024
+        "default": 2048,
+        "value": 2048
       }
     },
     "reach-entity-attributes:attack_range": {
@@ -240,6 +273,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "tetra:ability_cooldown": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
       }
     }
   }
