@@ -3,6 +3,8 @@ ServerEvents.recipes(e => {
     e.remove({id: 'tfmg:fractional_distillation/crude_oil_sus'})
     e.remove({id: 'tfmg:distillation/heavy_oil'})
     e.remove({id: 'tfmg:distillation/naphtha'})
+    e.remove({id: 'tfmg:mixing/liquid_plastic_from_ethylene'})
+    e.remove({id: 'tfmg:mixing/liquid_plastic_from_propylene'})
 //Distillation recipe
     e.custom({
         "type": "tfmg:advanced_distillation",
@@ -73,4 +75,5 @@ ServerEvents.recipes(e => {
 //Rocket fuel mixing recipe
     e.recipes.create.mixing(Fluid.of('ad_astra:fuel',600),[Fluid.of('kubejs:heavy_oil',100),Fluid.of('kubejs:light_oil',500)])
 //Liquid plastic recipe
+    e.recipes.create.mixing(Fluid.of('tfmg:liquid_plastic',1000),[Fluid.of('tfmg:ethylene',1000),Fluid.of('tfmg:propylene',600)])
 })
