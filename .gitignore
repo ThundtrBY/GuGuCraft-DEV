@@ -37,4 +37,8 @@ config/xaerominimap_entities.json
 config/InventoryHUD/*
 config/xaerominimap_entities.json
 config/jade/*
-config/InventoryHUD/*
+config/spark/
+config/InventoryHUD/
+config/kiwi-client.yaml
+config/oculus.properties
+config/xaerominimap_entities.json
