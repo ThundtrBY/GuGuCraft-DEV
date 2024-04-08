@@ -26,7 +26,7 @@ ServerEvents.recipes(e => {
             "amount": 50
           },
           {
-            "fluid": "kubejs:sulfur_naphtha_oil",
+            "fluid": "kubejs:sulfur_naphtha",
             "amount": 100
           },
           {
@@ -40,7 +40,7 @@ ServerEvents.recipes(e => {
         "ingredients": [
       
           {
-            "fluid": "kubejs:naphtha_oil",
+            "fluid": "kubejs:naphtha",
             "amount": 1000
           }
         ],
@@ -70,7 +70,7 @@ ServerEvents.recipes(e => {
 //Desulfurization recipe
     e.recipes.create.mixing([Fluid.of('kubejs:heavy_oil',1000), 'tfmg:sulfur_dust', 'kubejs:universal_catalyst'], [Fluid.of('kubejs:sulfur_heavy_oil',1000), 'kubejs:universal_catalyst']).heated()
     e.recipes.create.mixing([Fluid.of('kubejs:light_oil',1000), 'tfmg:sulfur_dust', 'kubejs:universal_catalyst'], [Fluid.of('kubejs:sulfur_light_oil',1000), 'kubejs:universal_catalyst']).heated()
-    e.recipes.create.mixing([Fluid.of('kubejs:naphtha_oil',1000), 'tfmg:sulfur_dust', 'kubejs:universal_catalyst'], [Fluid.of('kubejs:sulfur_naphtha_oil',1000), 'kubejs:universal_catalyst']).heated()
+    e.recipes.create.mixing([Fluid.of('kubejs:naphtha',1000), 'tfmg:sulfur_dust', 'kubejs:universal_catalyst'], [Fluid.of('kubejs:sulfur_naphtha',1000), 'kubejs:universal_catalyst']).heated()
     e.recipes.create.mixing([Fluid.of('kubejs:petroleum_gas',1000), 'tfmg:sulfur_dust', 'kubejs:universal_catalyst'], [Fluid.of('kubejs:sulfur_petroleum_gas',1000), 'kubejs:universal_catalyst']).heated()
 //Rocket fuel mixing recipe
     e.recipes.create.mixing(Fluid.of('ad_astra:fuel',600),[Fluid.of('kubejs:heavy_oil',100),Fluid.of('kubejs:light_oil',500)])
