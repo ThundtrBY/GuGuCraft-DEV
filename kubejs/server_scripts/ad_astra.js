@@ -165,24 +165,6 @@ ServerEvents.recipes(event => {
     }
   )
   event.custom({
-    "type": "create:mixing",
-    "heatRequirement": "superheated",
-    "ingredients": [
-      {
-        "item": "minecraft:iron_ingot"
-      },
-      {
-        "tag": "minecraft:coals"
-      }
-    ],
-    "results": [
-      {
-        "amount": 1,
-        "item": "ad_astra:steel_ingot"
-      }
-    ]
-  })
-  event.custom({
     "type": "create:mechanical_crafting",
     "acceptMirrored": false,
     "key": {

@@ -1,4 +1,5 @@
 ServerEvents.recipes(event =>{
+  event.remove({id: 'tfmg:industrial_blasting/steel'})
   event.custom({
     "type": "create:sequenced_assembly",
     "ingredient": [
@@ -113,4 +114,26 @@ ServerEvents.recipes(event =>{
     ]
   })
   event.smelting('kubejs:cured_rubber','kubejs:rubber')
+  event.custom({
+    "type": "tfmg:industrial_blasting",
+    "ingredients": [
+      {
+        "count": 1,
+        "item": "tfmg:blasting_mixture"
+      }
+    ],
+    "processingTime": 200,
+    "results": [
+      {
+        "fluid": "tfmg:molten_steel",
+        "amount": 144
+      },
+      {
+        "fluid": "tfmg:molten_slag",
+        "amount": 72
+      }
+  
+    ]
+  })
+  event.recipes.create.mixing(['ad_astra:steel_ingot', 'tfmg:ingot_mold'], [Fluid.of('tfmg:molten_steel',144), 'tfmg:ingot_mold']).superheated()
 })
