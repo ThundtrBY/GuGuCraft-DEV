@@ -35,6 +35,36 @@ ServerEvents.recipes(e => {
           }
         ]
       })
+// Adastra compat
+      e.custom({
+        "type": "tfmg:advanced_distillation",
+        "ingredients": [
+      
+          {
+            "fluid": "ad_astra:oil",
+            "nbt": {},
+            "amount": 100
+          }
+        ],
+        "results": [
+          {
+            "fluid": "kubejs:sulfur_heavy_oil",
+            "amount": 10
+          },
+          {
+            "fluid": "kubejs:sulfur_light_oil",
+            "amount": 50
+          },
+          {
+            "fluid": "kubejs:sulfur_naphtha",
+            "amount": 100
+          },
+          {
+            "fluid": "kubejs:sulfur_petroleum_gas",
+            "amount": 60
+          }
+        ]
+    })
     e.custom({
         "type": "tfmg:distillation",
         "ingredients": [
