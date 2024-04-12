@@ -136,18 +136,11 @@ ServerEvents.recipes(event =>{
     ]
   })
   event.recipes.create.mixing(['ad_astra:steel_ingot', 'tfmg:ingot_mold'], [Fluid.of('tfmg:molten_steel',144), 'tfmg:ingot_mold']).superheated()
-  BlockCrafting.addMultiblockStructure(MultiblockStructureBuilder.create("kubejs:universal_catalyst")
-    .pattern("aaa","aaa","aaa")
-    .pattern("aaa","aaa","aca")
-    .pattern("aaa","aaa","aaa")
-    .center("c", Blocks.SLIME_BLOCK)
-    .where("a", Blocks.SLIME_BLOCK)
-    .craftingItem("kubejs:intergrational_mechanism")
+  BlockCrafting.addMultiblockStructure(MultiblockStructureFileBuilder.create("kubejs:universal_catalyst")
+    .file("structures/ucatalyst.nbt")
+    .center(Blocks.AMETHYST_BLOCK)
+    .craftingItem("kubejs:integrational_mechanism")
     .resultItem("kubejs:universal_catalyst")
-    .resultAction((player) => {
-      var item = player.getMainHandItem();
-      player.setMainHandItem('minecraft:air');
-    })
     .build()
   )
 })
