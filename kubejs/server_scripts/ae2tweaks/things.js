@@ -1,4 +1,5 @@
 ServerEvents.recipes(e => {
+    let transmatrix = 'kubejs:incomplete_matrix'
     e.shaped(
         Item.of('ae2:mysterious_cube', 1),
         [ 
@@ -14,5 +15,19 @@ ServerEvents.recipes(e => {
           E: 'ae2:smooth_sky_stone_block',
           F: 'ae2:fluix_block'
         }
-      )
+    )
+    e.recipes.create.sequenced_assembly([
+		Item.of('kubejs:computation_matrix')
+	], 'ae2:printed_silicon', [ 
+        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:molten_redstone',144)]),
+        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:molten_redstone',144)]),
+        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:molten_redstone',144)]),
+        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:molten_redstone',144)]),
+        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:molten_redstone',144)]),
+        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:molten_redstone',144)]),
+        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:molten_redstone',144)]),
+        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:molten_redstone',144)]),
+        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:molten_redstone',144)]),
+        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:molten_redstone',144)])
+	]).transitionalItem(transmatrix).loops(3)
 })
