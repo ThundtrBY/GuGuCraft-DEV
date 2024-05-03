@@ -43,3 +43,6 @@ config/oculus.properties
 config/xaerominimap_entities.json
 .vscode/
 config/quark-common.toml
+modernfix/
+servers.dat
+servers.dat_old
