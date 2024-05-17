@@ -61,6 +61,7 @@ StartupEvents.registry('item', e =>{
   e.create('divide').displayName("÷")
   e.create('computation_matrix').displayName('计算矩阵')
   e.create('incomplete_matrix').displayName('计算矩阵（半成品）')
+  e.create('missingno').displayName('错误')
 })
 StartupEvents.registry('block', e =>{
   e.create('sheldonite_ore'). displayName('铂矿石').soundType('nether_ore').requiresTool(true).tagBlock("mineable/pickaxe").tagBlock('minecraft:needs_iron_tool')
