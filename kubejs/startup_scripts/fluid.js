@@ -2,7 +2,7 @@ StartupEvents.registry('fluid', e => {
   let colors = [0xCBE827, 0xAEE827, 0x68E827, 0x27E86E, 0x27E8B1, 0x27DEE8, 0x27B5E8, 0x2798E8, 0x2778E8, 0x2748E8]
   for (var i = 0; i < 10; i++)
     e.create('number_' + i)
-      .displayName(`Liquified Logic (${i})`)
+      .displayName(`液态逻辑(${i})`)
       .stillTexture('kubejs:block/fluid/number_still')
       .flowingTexture('kubejs:block/fluid/number_flow')
       .color(colors[i])

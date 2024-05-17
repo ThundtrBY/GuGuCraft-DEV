@@ -20,15 +20,17 @@ ServerEvents.recipes(e => {
     e.recipes.create.sequenced_assembly([
 		Item.of('kubejs:computation_matrix')
 	], 'ae2:printed_silicon', [ 
-        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:molten_redstone',144)]),
-        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:molten_redstone',144)]),
-        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:molten_redstone',144)]),
-        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:molten_redstone',144)]),
-        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:molten_redstone',144)]),
-        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:molten_redstone',144)]),
-        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:molten_redstone',144)]),
-        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:molten_redstone',144)]),
-        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:molten_redstone',144)]),
-        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:molten_redstone',144)])
+        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:number_0',144)]),
+        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:number_1',144)]),
+        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:number_2',144)]),
+        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:number_3',144)]),
+        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:number_4',144)]),
+        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:number_5',144)]),
+        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:number_6',144)]),
+        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:number_7',144)]),
+        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:number_8',144)]),
+        e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:number_9',144)])
 	]).transitionalItem(transmatrix).loops(3)
+  for (var i = 0; i < 10; i++)
+    e.recipes.create.emptying(Fluid.of(`kubejs:number_${i}`,144),`kubejs:${i}`)
 })
