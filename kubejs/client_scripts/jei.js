@@ -65,4 +65,6 @@ JEIEvents.hideItems(e =>{
     e.hide('kubejs:incomplete_printed_calculation_processor')
     e.hide('kubejs:incomplete_printed_logic_processor')
     e.hide('kubejs:incomplete_reinforced_glass')
+    e.hide('ae2:matter_cannon')
+    e.hide('ae2:inscriber')
 })

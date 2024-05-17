@@ -46,3 +46,4 @@ config/quark-common.toml
 modernfix/
 servers.dat
 servers.dat_old
+kubejs/config/probejs.json

@@ -1,5 +1,6 @@
 ServerEvents.recipes(e => {
     let transmatrix = 'kubejs:incomplete_matrix'
+    e.remove({output:'ae2:matter_cannon'})
     e.shaped(
         Item.of('ae2:mysterious_cube', 1),
         [ 
