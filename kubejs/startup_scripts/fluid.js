@@ -11,6 +11,11 @@ StartupEvents.registry('fluid', e => {
     .noBucket()
     .thickTexture(0x99FF99) // () conatins the hex code, prefixed by 0x, of the color of the fluid
     .displayName('熔融暮色精华') //in  game name of fluid
+  e.create('fine_sand')
+    .displayName('流沙')
+    .stillTexture('kubejs:block/fluid/fine_sand_still')
+    .flowingTexture('kubejs:block/fluid/fine_sand_flow')
+    .bucketColor(0xE3DBB0)
   e.create('resin')
     .noBucket()
     .flowingTexture('kubejs:block/fluid/resin_flow')
