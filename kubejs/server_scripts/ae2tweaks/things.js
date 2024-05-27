@@ -3,6 +3,17 @@ ServerEvents.recipes(e => {
     e.remove({output:'ae2:matter_cannon'})
     e.remove({output:'ae2:sky_dust'})
     e.remove({output:'ae2:silicon'})
+    e.shaped('kubejs:cast', [
+            'AA ', 
+            'AA '
+        ], {
+                A: 'minecraft:copper_ingot', 
+        }
+    )
+    let cast = ['kubejs:plus_cast', 'kubejs:minus_cast', 'kubejs:multiply_cast', 'kubejs:devide_cast', 'kubejs:three_cast', 'kubejs:eight_cast']
+    cast.forEach(i => {
+        e.stonecutting(`${i}`, 'kubejs:cast')
+    });
     e.recipes.create.crushing(['ae2:sky_stone_block', Item.of('ae2:sky_dust').withChance(0.5)], 'ae2:sky_stone_block').processingTime(200)
     e.recipes.create.sequenced_assembly([
 		Item.of('kubejs:incomplete_matrix')
