@@ -20,11 +20,8 @@
 	#This setting may require a relog to take effect
 	useDevCape = true
 	#.
-	#Should the normal create conductor cap be rendered on top of the conductors existing hat?
-	renderNormalCap = true
-	#.
-	#Should flywheels and blocks extending the FlywheelBlock class be animated when apart of trains?
-	animatedFlywheels = true
+	#Disable the optifine warning screen [DANGER]: Using optifine With Steam 'n' Rails may cause issues and you will not get any support for optifine related issues.
+	disableOptifineNag = false
 
 	#.
 	#Journeymap Settings
@@ -44,37 +41,16 @@
 	#Smoke Settings
 	[client.smoke]
 		#.
-		#Smoke particle style
-		#Allowed Values: VANILLA, OLD, CARTOON
-		smokeType = "CARTOON"
-
+		#[in Ticks]
+		#Lifetime of smoke particles emitted by contraptions
+		#Range: 20 ~ 1000
+		smokeLifetime = 500
 		#.
-		#Old-style Smoke Settings
-		[client.smoke.old]
-			#.
-			#[in Ticks]
-			#Lifetime of smoke particles emitted by contraptions
-			#Range: 20 ~ 1000
-			smokeLifetime = 500
-			#.
-			#Smoke emission rate on contraptions
-			#Range: 0.0 ~ 10.0
-			smokePercentage = 0.75
-			#.
-			#Smoke texture quality
-			#Allowed Values: LOW, MEDIUM, HIGH, ULTRA
-			smokeQuality = "HIGH"
-			#.
-			#Thicker smoke (renders 2 extra layers per particle)
-			thickerSmoke = true
-
+		#Smoke emission rate on contraptions
+		#Range: 0.0 ~ 10.0
+		smokePercentage = 0.75
 		#.
-		#Cartoon-style Smoke Settings
-		[client.smoke.cartoon]
-			#.
-			#Spawn faster-rising small puffs of smoke on an interval
-			spawnFasterPuffs = true
-			#.
-			#Spawn steam on an interval
-			spawnSteam = false
+		#Smoke texture quality
+		#Allowed Values: LOW, MEDIUM, HIGH, ULTRA
+		smokeQuality = "HIGH"
 

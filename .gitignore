@@ -48,3 +48,7 @@ servers.dat
 servers.dat_old
 kubejs/config/probejs.json
 config/neruina.json
+config/chat_heads.json5
+config/embeddium-options.json
+config/railways-client.toml
+config/fml.toml
