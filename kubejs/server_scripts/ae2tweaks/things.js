@@ -43,6 +43,37 @@ ServerEvents.recipes(e => {
 	]).transitionalItem(transmatrix).loops(3)
     for (var i = 0; i < 10; i++)
       e.recipes.create.emptying(Fluid.of(`kubejs:number_${i}`,144),`kubejs:${i}`)
-    e.recipes.create.mixing(Fluid.of('kubejs:fine_sand',100),'minecraft:sand').heated()
-    e.recipes.create.mixing('kubejs:sand_ball',[Fluid.of('kubejs:fine_sand',1000),Fluid.water(100)])
+    e.recipes.create.splashing([Item.of('kubejs:sand_ball').withChance(0.5)],'minecraft:sand')
+    e.recipes.create.emptying([Fluid.of('kubejs:fine_sand',500),'kubejs:rough_sand'],'kubejs:sand_ball')
+    e.custom({
+      "type": "ae2:transform",
+      "circumstance": {
+        "type": "explosion"
+      },
+      "ingredients": [
+        {
+          "item": "kubejs:rough_sand"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "item": "kubejs:purified_sand"
+      }
+    })
+    e.recipes.create.compacting('kubejs:silicon_compound',['kubejs:purified_sand','kubejs:coke_chunk',Fluid.of('kubejs:fine_sand',500)])
+    e.custom({
+      "type": "lychee:block_crushing",
+      "item_in": [
+          {
+              "item": "kubejs:silicon_compound"
+          }
+      ],
+      "post": [
+          {
+              "type": "drop_item",
+              "item": "ae2:silicon",
+              "count": 1
+          }
+      ]
+  })
 })

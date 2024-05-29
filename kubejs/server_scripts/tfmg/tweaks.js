@@ -1,4 +1,5 @@
 ServerEvents.recipes(e => {
+    let transcoke = 'kubejs:incomplete_coke_chunk'
     e.remove({ id: 'tfmg:compacting/plastic_molding' })
     e.custom({
         "type":"lychee:item_inside",
@@ -18,4 +19,10 @@ ServerEvents.recipes(e => {
         }
       ]
     })
+    e.recipes.create.sequenced_assembly([
+		Item.of('kubejs:coke_chunk')
+	], 'tfmg:coal_coke', [ 
+        e.recipes.createFilling(transcoke, [transcoke, Fluid.water(100)]),
+        e.recipes.createCutting(transcoke,transcoke)
+	]).transitionalItem(transcoke).loops(1)
 })

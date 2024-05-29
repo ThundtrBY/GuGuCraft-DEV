@@ -78,6 +78,10 @@ StartupEvents.registry('item', e =>{
   e.create('divide_cast_flow').displayName('未冷却的铸模(÷)')
   e.create('three_cast_flow').displayName('未冷却的铸模(3)')
   e.create('eight_cast_flow').displayName('未冷却的铸模(8)')
+  e.create('rough_sand').displayName('沙子碎块')
+  e.create('purified_sand').displayName('纯净沙子')
+  e.create('coke_chunk').displayName('焦煤碎块')
+  e.create('incomplete_coke_chunk').displayName('焦煤碎块(半成品)')
 })
 StartupEvents.registry('block', e =>{
   e.create('sheldonite_ore'). displayName('铂矿石').soundType('nether_ore').requiresTool(true).tagBlock("mineable/pickaxe").tagBlock('minecraft:needs_iron_tool')
