@@ -43,4 +43,6 @@ ServerEvents.recipes(e => {
 	]).transitionalItem(transmatrix).loops(3)
     for (var i = 0; i < 10; i++)
       e.recipes.create.emptying(Fluid.of(`kubejs:number_${i}`,144),`kubejs:${i}`)
+    e.recipes.create.mixing(Fluid.of('kubejs:fine_sand',100),'minecraft:sand').heated()
+    e.recipes.create.mixing('kubejs:sand_ball',[Fluid.of('kubejs:fine_sand',1000),Fluid.water(100)])
 })
