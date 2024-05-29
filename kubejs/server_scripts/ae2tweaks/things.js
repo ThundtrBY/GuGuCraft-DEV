@@ -10,10 +10,16 @@ ServerEvents.recipes(e => {
                 A: 'minecraft:copper_ingot', 
         }
     )
-    let cast = ['kubejs:plus_cast', 'kubejs:minus_cast', 'kubejs:multiply_cast', 'kubejs:devide_cast', 'kubejs:three_cast', 'kubejs:eight_cast']
+    let cast = ['kubejs:plus_cast', 'kubejs:minus_cast', 'kubejs:multiply_cast', 'kubejs:divide_cast', 'kubejs:three_cast', 'kubejs:eight_cast']
     cast.forEach(i => {
-        e.stonecutting(`${i}`, 'kubejs:cast')
-    });
+        e.stonecutting(i, 'kubejs:cast')
+    })
+    //e.stonecutting('kubejs:plus_cast', 'kubejs:cast')
+    //e.stonecutting('kubejs:minus_cast', 'kubejs:cast')
+    //e.stonecutting('kubejs:multiply_cast', 'kubejs:cast')
+    //e.stonecutting('kubejs:devide_cast', 'kubejs:cast')
+    //e.stonecutting('kubejs:three_cast', 'kubejs:cast')
+    //e.stonecutting('kubejs:eight_cast', 'kubejs:cast')
     e.recipes.create.crushing(['ae2:sky_stone_block', Item.of('ae2:sky_dust').withChance(0.5)], 'ae2:sky_stone_block').processingTime(200)
     e.recipes.create.sequenced_assembly([
 		Item.of('kubejs:incomplete_matrix')
