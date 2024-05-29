@@ -320,4 +320,11 @@ ServerEvents.recipes(event =>{
       "item": "kubejs:incomplete_sealed_mechanism"
     }
 }).damageIngredient('kubejs:tools_screwdriver')
+event.recipes.create.sequenced_assembly([
+  Item.of('kubejs:calculation_mechanism')
+], 'create:precision_mechanism', [ 
+      event.recipes.createDeploying('kubejs:incomplete_calculation_mechanism',['kubejs:incomplete_calculation_mechanism','ae2:printed_silicon']),
+      event.recipes.createDeploying('kubejs:incomplete_calculation_mechanism',['kubejs:incomplete_calculation_mechanism','ae2:printed_silicon']),
+      event.recipes.createDeploying('kubejs:incomplete_calculation_mechanism',['kubejs:incomplete_calculation_mechanism','#kubejs:tools_screwdriver'])
+]).transitionalItem('kubejs:incomplete_calculation_mechanism').loops(1)
 })

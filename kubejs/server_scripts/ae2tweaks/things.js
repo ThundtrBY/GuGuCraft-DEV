@@ -3,27 +3,29 @@ ServerEvents.recipes(e => {
     e.remove({output:'ae2:matter_cannon'})
     e.remove({output:'ae2:sky_dust'})
     e.remove({output:'ae2:silicon'})
-    e.shaped('kubejs:cast', [
-            'AA ', 
-            'AA '
-        ], {
-                A: 'minecraft:copper_ingot', 
-        }
-    )
+    e.stonecutting('kubejs:cast', 'minecraft:copper_ingot')
     let cast = ['kubejs:plus_cast', 'kubejs:minus_cast', 'kubejs:multiply_cast', 'kubejs:divide_cast', 'kubejs:three_cast', 'kubejs:eight_cast']
+    let cast_flow = ['kubejs:plus_cast_flow', 'kubejs:minus_cast_flow', 'kubejs:multiply_cast_flow', 'kubejs:divide_cast_flow', 'kubejs:three_cast_flow', 'kubejs:eight_cast_flow']
     cast.forEach(i => {
         e.stonecutting(i, 'kubejs:cast')
     })
-    //e.stonecutting('kubejs:plus_cast', 'kubejs:cast')
-    //e.stonecutting('kubejs:minus_cast', 'kubejs:cast')
-    //e.stonecutting('kubejs:multiply_cast', 'kubejs:cast')
-    //e.stonecutting('kubejs:devide_cast', 'kubejs:cast')
-    //e.stonecutting('kubejs:three_cast', 'kubejs:cast')
-    //e.stonecutting('kubejs:eight_cast', 'kubejs:cast')
+    e.recipes.create.mixing([Fluid.of('kubejs:matrix',50),Fluid.water(10)],'kubejs:calculation_mechanism').superheated()
+    e.recipes.create.filling('kubejs:plus_cast_flow',[Fluid.of('kubejs:matrix',100),'kubejs:plus_cast'])
+    e.recipes.create.filling('kubejs:minus_cast_flow',[Fluid.of('kubejs:matrix',100),'kubejs:minus_cast'])
+    e.recipes.create.filling('kubejs:multiply_cast_flow',[Fluid.of('kubejs:matrix',100),'kubejs:multiply_cast'])
+    e.recipes.create.filling('kubejs:divide_cast_flow',[Fluid.of('kubejs:matrix',100),'kubejs:divide_cast'])
+    e.recipes.create.filling('kubejs:three_cast_flow',[Fluid.of('kubejs:matrix',100),'kubejs:three_cast'])
+    e.recipes.create.filling('kubejs:eight_cast_flow',[Fluid.of('kubejs:matrix',100),'kubejs:eight_cast'])
+    e.recipes.create.splashing(['kubejs:plus','kubejs:plus_cast'],'kubejs:plus_cast_flow')
+    e.recipes.create.splashing(['kubejs:minus','kubejs:minus_cast'],'kubejs:minus_cast_flow')
+    e.recipes.create.splashing(['kubejs:multiply','kubejs:multiply_cast'],'kubejs:multiply_cast_flow')
+    e.recipes.create.splashing(['kubejs:divide','kubejs:divide_cast'],'kubejs:divide_cast_flow')
+    e.recipes.create.splashing(['kubejs:3','kubejs:three_cast'],'kubejs:three_cast_flow')
+    e.recipes.create.splashing(['kubejs:8','kubejs:eight_cast'],'kubejs:eight_cast_flow')
     e.recipes.create.crushing(['ae2:sky_stone_block', Item.of('ae2:sky_dust').withChance(0.5)], 'ae2:sky_stone_block').processingTime(200)
     e.recipes.create.sequenced_assembly([
 		Item.of('kubejs:incomplete_matrix')
-	], 'ae2:printed_silicon', [ 
+	], 'tfmg:plastic_sheet', [ 
         e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:number_0',144)]),
         e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:number_1',144)]),
         e.recipes.createFilling(transmatrix, [transmatrix, Fluid.of('kubejs:number_2',144)]),
