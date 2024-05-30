@@ -21,7 +21,6 @@ JEIEvents.hideItems(e =>{
     e.hide('createaddition:electrum_spool')
     e.hide('createaddition:electrum_rod')
     e.hide('ad_astra:tier_4_rocket')
-    e.hide('ad_astra:tier_3_rocket')
     e.hide('ad_astra:tier_1_rover')
     e.hide('ad_astra:jet_suit_boots')
     e.hide('ad_astra:jet_suit_pants')
