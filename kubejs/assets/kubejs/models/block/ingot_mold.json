@@ -1,0 +1,6 @@
+{
+  "parent": "kubejs:block/mold",
+  "textures": {
+    "mold": "kubejs:block/ingot_mold"
+  }
+}

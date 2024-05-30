@@ -91,4 +91,6 @@ StartupEvents.registry('block', e =>{
   e.create('train_machine').displayName('列车机械装置').soundType('lantern').notSolid().renderType('cutout').hardness(3.0)
   e.create('reinforced_glass').displayName('高密度防爆玻璃').soundType('glass').notSolid().renderType('cutout').resistance(1200).hardness(20.0).tagBlock("mineable/pickaxe")
   e.create('incomplete_reinforced_glass').displayName('高密度防爆玻璃(半成品)').soundType('glass').notSolid().renderType('cutout')
+  e.create('ingot_mold').displayName('锭铸模').soundType('lantern').notSolid().renderType('cutout').box(5, 0, 3, 11, 4, 13, true)
+  e.create('molten_steel_ingot_mold').displayName('熔融钢铸模').soundType('lantern').notSolid().renderType('cutout').box(5, 0, 3, 11, 4, 13, true)
 })

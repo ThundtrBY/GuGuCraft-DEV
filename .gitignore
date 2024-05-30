@@ -52,3 +52,4 @@ config/chat_heads.json5
 config/embeddium-options.json
 config/railways-client.toml
 config/fml.toml
+config/youkaishomecoming-common.toml
