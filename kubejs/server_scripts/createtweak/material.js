@@ -95,26 +95,6 @@ ServerEvents.recipes(event =>{
         }
   })
   event.custom({
-    "type": "create:compacting",
-    "heatRequirement": "superheated",
-    "ingredients": [
-      {
-        "item": "minecraft:moss_block"
-      },
-      {
-        "amount": 100,
-        "fluid": "ad_astra:oil",
-        "nbt": {}
-      }
-    ],
-    "results": [
-      {
-        "item": "kubejs:rubber",
-      }
-    ]
-  })
-  event.smelting('kubejs:cured_rubber','kubejs:rubber')
-  event.custom({
     "type": "tfmg:industrial_blasting",
     "ingredients": [
       {

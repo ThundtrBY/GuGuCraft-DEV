@@ -1,11 +1,3 @@
-JEIEvents.addItems(e => {
-    e.add(Item.of('create:chromatic_compound'))
-    e.add(Item.of('create:refined_radiance'))
-    e.add(Item.of('create:refined_radiance_casing'))
-    e.add(Item.of('create:shadow_steel'))
-    e.add(Item.of('create:shadow_steel_casing'))
-    e.add(Item.of('ae2:facade').withNBT({item:"minecraft:stone"}))
-})
 JEIEvents.hideItems(e =>{
     let hideItems = ['createaddition:electric_motor',
                      'createaddition:creative_energy',
@@ -21,6 +13,7 @@ JEIEvents.hideItems(e =>{
                      'createaddition:electrum_wire',
                      'createaddition:electrum_spool',
                      'createaddition:electrum_rod',
+                     'createaddition:zinc_sheet',
                      'ad_astra:tier_4_rocket',
                      'ad_astra:tier_1_rover',
                      'ad_astra:jet_suit_boots',
@@ -51,8 +44,25 @@ JEIEvents.hideItems(e =>{
                      'ad_astra:ostrum_tank',
                      'ad_astra:calorite_engine',
                      'ad_astra:ostrum_engine',
+                     'tfmg:low_grade_fuel_engine',
+                     'tfmg:compact_engine',
+                     'tfmg:large_radial_engine',
+                     'tfmg:radial_engine',
+                     'tfmg:diesel_engine_expansion',
+                     'tfmg:diesel_engine',
+                     'tfmg:turbine_engine_back',
+                     'tfmg:turbine_engine',
+                     'tfmg:lpg_engine_back',
+                     'tfmg:lpg_engine',
+                     'tfmg:gasoline_engine_back',
+                     'tfmg:gasoline_engine',
+                     'kubejs:sealed_mechanism',
+                     'kubejs:infernal_mechanism',
+                     'kubejs:abstruse_mechanism',
+                     'kubejs:integrational_mechanism',
                      'ae2:matter_cannon',
-                     'ae2:inscriber'
+                     'ae2:inscriber',
+                     'ae2:facade'
                     ]
     hideItems.forEach(i => {
         e.hide(i)
@@ -60,4 +70,9 @@ JEIEvents.hideItems(e =>{
     Ingredient.of('/kubejs:incomplete./').itemIds.forEach(i =>{
         e.hide(i)
     })
+})
+JEIEvents.addItems(e => {
+    e.add(Item.of('create:refined_radiance_casing'))
+    e.add(Item.of('create:shadow_steel_casing'))
+    e.add(Item.of('ae2:facade').withNBT({item:"minecraft:stone"}))
 })

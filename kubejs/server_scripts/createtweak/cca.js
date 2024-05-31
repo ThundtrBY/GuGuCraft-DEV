@@ -14,6 +14,7 @@ ServerEvents.recipes(event =>{
     event.remove({output: 'createaddition:electrum_rod'})
     event.remove({id: 'createaddition:compacting/seed_oil'})
     event.remove({id: 'createaddition:mixing/bioethanol'})
+    event.remove({output:'createaddition:zinc_sheet'})
     event.custom({
         "type": "create:mechanical_crafting",
         "acceptMirrored": true,
@@ -37,7 +38,7 @@ ServerEvents.recipes(event =>{
             "item": "create:electron_tube"
           },
           "G": {
-            "item": "kubejs:sealed_mechanism"
+            "item": "create_dd:sealed_mechanism"
           },
         },
         "pattern": [

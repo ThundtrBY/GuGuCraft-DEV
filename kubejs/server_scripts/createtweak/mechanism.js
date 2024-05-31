@@ -1,4 +1,5 @@
 ServerEvents.recipes(event =>{
+    event.remove({output:'create_dd:calculation_mechanism'})
 // Kinetic
     event.shaped(
         Item.of('kubejs:kinetic_mechanism', 1),
@@ -240,91 +241,12 @@ ServerEvents.recipes(event =>{
       "item": "guguaddons:unfinished_twilight_mechanism"
     }
   })
-//Sealed
-  event.custom({
-    "type": "create:sequenced_assembly",
-    "ingredient": {
-      "item": "kubejs:kinetic_mechanism"
-    },
-    "loops": 1,
-    "results": [
-      {
-        "item": "kubejs:sealed_mechanism"
-      }
-    ],
-    "sequence": [
-      {
-        "type": "create:cutting",
-        "ingredients": [
-          {
-            "item": "kubejs:incomplete_sealed_mechanism"
-          }
-        ],
-        "processingTime": 400,
-        "results": [
-          {
-            "item": "kubejs:incomplete_sealed_mechanism"
-          }
-        ]
-      },
-      {
-        "type": "create:deploying",
-        "ingredients": [
-          {
-            "item": "kubejs:incomplete_sealed_mechanism"
-          },
-          {
-            "item": "kubejs:cured_rubber"
-          }
-        ],
-        "results": [
-          {
-            "item": "kubejs:incomplete_sealed_mechanism"
-          }
-        ]
-      },
-      {
-        "type": "create:deploying",
-        "ingredients": [
-          {
-            "item": "kubejs:incomplete_sealed_mechanism"
-          },
-          {
-            "item": "kubejs:cured_rubber"
-          }
-        ],
-        "results": [
-          {
-            "item": "kubejs:incomplete_sealed_mechanism"
-          }
-        ]
-      },
-      {
-        "type": "create:deploying",
-        "ingredients": [
-          {
-            "item": "kubejs:incomplete_sealed_mechanism"
-          },
-          {
-            "tag": "kubejs:tools_screwdriver"
-          }
-        ],
-        "results": [
-          {
-            "item": "kubejs:incomplete_sealed_mechanism"
-          }
-        ]
-      }
-    ],
-    "transitionalItem": {
-      "item": "kubejs:incomplete_sealed_mechanism"
-    }
-}).damageIngredient('kubejs:tools_screwdriver')
+let cal = 'create_dd:incomplete_calculation_mechanism'
 event.recipes.create.sequenced_assembly([
-  Item.of('kubejs:calculation_mechanism')
+  Item.of('create_dd:calculation_mechanism')
 ], 'create:precision_mechanism', [ 
-      event.recipes.createDeploying('kubejs:incomplete_calculation_mechanism',['kubejs:incomplete_calculation_mechanism','ae2:printed_silicon']),
-      event.recipes.createDeploying('kubejs:incomplete_calculation_mechanism',['kubejs:incomplete_calculation_mechanism','ae2:printed_silicon']),
-      event.recipes.createDeploying('kubejs:incomplete_calculation_mechanism',['kubejs:incomplete_calculation_mechanism','#kubejs:tools_screwdriver'])
-]).transitionalItem('kubejs:incomplete_calculation_mechanism').loops(1)
+      event.recipes.createDeploying(cal,[cal,'ae2:printed_silicon']),
+      event.recipes.createDeploying(cal,[cal,'ae2:printed_silicon']),
+      event.recipes.createDeploying(cal,[cal,'#kubejs:tools_screwdriver'])
+]).transitionalItem(cal).loops(1)
 })
