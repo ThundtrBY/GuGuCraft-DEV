@@ -50,6 +50,7 @@ StartupEvents.registry('fluid', e => {
   e.create('petroleum_gas')
     .thinTexture(0xF8F8FF)
     .displayName('炼油气')
+    .noBucket()
   e.create('matrix')
     .displayName('计算矩阵')
     .stillTexture('kubejs:block/fluid/matrix_still')
