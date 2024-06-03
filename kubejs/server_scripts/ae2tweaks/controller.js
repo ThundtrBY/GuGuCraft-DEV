@@ -7,7 +7,7 @@ ServerEvents.recipes(e => {
       'MFEFM',
       'PMPMP'
     ], {
-      C: 'kubejs:calculation_mechanism',
+      C: 'create_dd:calculation_mechanism',
       E: 'ae2:engineering_processor',
       F: 'ae2:fluix_block',
       M: 'ae2:smooth_sky_stone_block',
