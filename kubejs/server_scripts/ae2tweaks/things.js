@@ -9,6 +9,9 @@ ServerEvents.recipes(e => {
     cast.forEach(i => {
         e.stonecutting(i, 'kubejs:cast')
     })
+    e.recipes.create.emptying(Fluid.of('kubejs:matrix',50),'create_dd:calculation_mechanism')
+    e.recipes.create.emptying(Fluid.of('kubejs:sky_stone',72),'ae2:sky_dust')
+    e.recipes.create.mixing(Fluid.of('kubejs:molten_redstone',576),[Fluid.of('kubejs:sky_stone',144),'minecraft:redstone','ae2:charged_certus_quartz_crystal'])
     e.recipes.create.mixing([Fluid.of('kubejs:matrix',50),Fluid.water(10)],'kubejs:calculation_mechanism').superheated()
     e.recipes.create.filling('kubejs:plus_cast_flow',[Fluid.of('kubejs:matrix',100),'kubejs:plus_cast'])
     e.recipes.create.filling('kubejs:minus_cast_flow',[Fluid.of('kubejs:matrix',100),'kubejs:minus_cast'])

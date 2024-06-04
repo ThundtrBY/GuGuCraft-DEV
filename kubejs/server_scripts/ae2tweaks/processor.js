@@ -23,19 +23,19 @@ ServerEvents.recipes(e => {
 		e.recipes.createDeploying(transengineering, [transengineering, 'ae2:printed_engineering_processor']),
         // like a normal recipe function, is used as a sequence step in this array. Input and output have the transitional item
         e.recipes.createFilling(transengineering, [transengineering, Fluid.of('kubejs:molten_redstone',144)])
-	]).transitionalItem(transengineering).loops(3)
+	]).transitionalItem(transengineering).loops(1)
     e.recipes.create.sequenced_assembly([
 		Item.of('ae2:calculation_processor')
 	], 'ae2:printed_silicon', [ 
 		e.recipes.createDeploying(transcalculation, [transcalculation, 'ae2:printed_calculation_processor']),
         e.recipes.createFilling(transcalculation, [transcalculation, Fluid.of('kubejs:molten_redstone',144)])
-	]).transitionalItem(transcalculation).loops(3)
+	]).transitionalItem(transcalculation).loops(1)
     e.recipes.create.sequenced_assembly([
 		Item.of('ae2:logic_processor')
 	], 'ae2:printed_silicon', [ 
 		e.recipes.createDeploying(translogic, [translogic, 'ae2:printed_logic_processor']),
         e.recipes.createFilling(translogic, [translogic, Fluid.of('kubejs:molten_redstone',144)])
-	]).transitionalItem(translogic).loops(3)
+	]).transitionalItem(translogic).loops(1)
 //printed processor
   e.recipes.create.sequenced_assembly([
 		Item.of('ae2:printed_silicon')

@@ -1,4 +1,6 @@
 ServerEvents.recipes(event => {
+  let transostrumtank = 'ad_astra:ostrum_tank'
+  let transostrumengine = 'ad_astra:ostrum_engine'
   event.remove({output:'ad_astra:netherite_space_helmet'})
   event.remove({output:'ad_astra:netherite_space_suit'})
   event.remove({output:'ad_astra:netherite_space_pants'})
@@ -650,5 +652,41 @@ ServerEvents.recipes(event => {
     "transitionalItem": {
       "item": "kubejs:incomplete_desh_tank"
     }
+  })
+  event.recipes.create.item_application('ad_astra:ostrum_plating',['create:andesite_casing','ad_astra:ostrum_plate'])
+  event.recipes.create.sequenced_assembly([
+		Item.of('ad_astra:ostrum_tank')
+	], 'ad_astra:desh_tank', [
+    event.recipes.createDeploying(transostrumtank,[transostrumtank,'ad_astra:ostrum_plate']),
+    event.recipes.createDeploying(transostrumtank,[transostrumtank,'ad_astra:ostrum_plate']),
+    event.recipes.createDeploying(transostrumtank,[transostrumtank,'ad_astra:ostrum_plate'])
+  ]).transitionalItem(transostrumtank).loops(2)
+  event.recipes.create.sequenced_assembly([
+		Item.of('ad_astra:ostrum_tank')
+	], 'ad_astra:desh_tank', [
+    event.recipes.createDeploying(transostrumtank,[transostrumtank,'ad_astra:ostrum_plate']),
+    event.recipes.createDeploying(transostrumtank,[transostrumtank,'ad_astra:ostrum_plate']),
+    event.recipes.createDeploying(transostrumtank,[transostrumtank,'ad_astra:ostrum_plate'])
+  ]).transitionalItem(transostrumtank).loops(5)
+  event.recipes.create.mechanical_crafting('ad_astra:tier_3_rocket', [
+    '  N  ',
+    ' AAA ',
+    ' ARA ',
+    ' ASA ',
+    ' ATA ',
+    'AAMAA',
+    'APPPA',
+    'FAAAF',
+    'F E F'
+  ], {
+    A: 'ad_astra:ostrum_plating',
+    M: 'create_dd:sealed_mechanism',
+    N: 'ad_astra:rocket_nose_cone',
+    R: 'kubejs:reinforced_glass',
+    S: 'kubejs:computation_matrix',
+    T: '#create:seats',
+    F: 'ad_astra:rocket_fin',
+    P: 'ad_astra:ostrum_tank',
+    E: 'ad_astra:ostrum_engine',
   })
 })
