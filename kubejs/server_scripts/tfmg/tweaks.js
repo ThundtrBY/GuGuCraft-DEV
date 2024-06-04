@@ -12,12 +12,15 @@ ServerEvents.recipes(e => {
         'tfmg:lpg_engine_back',
         'tfmg:lpg_engine',
         'tfmg:gasoline_engine_back',
-        'tfmg:gasoline_engine'
+        'tfmg:gasoline_engine',
+        'tfmg:coal_coke',
+        'tfmg:casting_basin',
+        'tfmg:casting_spout'
     ]
     removal.forEach(i => {
         e.remove({output:`${i}`})
     })
-    e.remove({output:'tfmg:coal_coke'})
+    e.remove({ id: 'tfmg:casting/steel' })
     e.remove({ id: 'tfmg:compacting/plastic_molding' })
     e.custom({
         "type":"lychee:item_inside",
