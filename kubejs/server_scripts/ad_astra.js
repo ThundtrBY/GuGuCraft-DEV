@@ -662,12 +662,12 @@ ServerEvents.recipes(event => {
     event.recipes.createDeploying(transostrumtank,[transostrumtank,'ad_astra:ostrum_plate'])
   ]).transitionalItem(transostrumtank).loops(2)
   event.recipes.create.sequenced_assembly([
-		Item.of('ad_astra:ostrum_tank')
-	], 'ad_astra:desh_tank', [
+		Item.of('ad_astra:ostrum_engine')
+	], 'ad_astra:desh_engine', [
     event.recipes.createDeploying(transostrumtank,[transostrumtank,'ad_astra:ostrum_plate']),
     event.recipes.createDeploying(transostrumtank,[transostrumtank,'ad_astra:ostrum_plate']),
     event.recipes.createDeploying(transostrumtank,[transostrumtank,'ad_astra:ostrum_plate'])
-  ]).transitionalItem(transostrumtank).loops(5)
+  ]).transitionalItem(transostrumengine).loops(5)
   event.recipes.create.mechanical_crafting('ad_astra:tier_3_rocket', [
     '  N  ',
     ' AAA ',
