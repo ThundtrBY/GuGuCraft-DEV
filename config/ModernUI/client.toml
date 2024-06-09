@@ -34,6 +34,9 @@
 	#This value will be no greater than master volume inactive.
 	#Range: 0.0 ~ 1.0
 	masterVolumeMinimized = 0.25
+	#This option means that blur effect only applies for GUI screens with a background
+	#This is only meaningful when blur effect is enabled.
+	blurWithBackground = true
 
 #Tooltip Config
 [tooltip]
@@ -49,7 +52,7 @@
 	#Multiple values produce a gradient effect, whereas one value produces a solid color.
 	#If less than 4 are provided, repeat the last value.
 	colorStroke = ["#F0AADCF0", "#F0DAD0F4", "#F0FFC3F7", "#F0DAD0F4"]
-	#Whether to use rounded tooltip shapes, or to use rectangular shapes.
+	#Whether to use rounded tooltip shapes, or to use vanilla style.
 	roundedShape = true
 	#True to center the tooltip title if rendering an item's tooltip.
 	#Following lines are not affected by this option.
@@ -62,9 +65,21 @@
 	#The cycle time of tooltip border color in milliseconds. (0 = OFF)
 	#Range: 0 ~ 5000
 	borderCycleTime = 1000
-	#The width of tooltip border, in GUI Scale Independent Pixels.
+	#The width of tooltip border, if rounded, in GUI Scale Independent Pixels.
 	#Range: 0.5 ~ 2.5
 	borderWidth = 1.3333333730697632
+	#The corner radius of tooltip border, if rounded, in GUI Scale Independent Pixels.
+	#Range: 0.0 ~ 8.0
+	cornerRadius = 3.0
+	#The shadow radius of tooltip, if rounded, in GUI Scale Independent Pixels.
+	#No impact on performance.
+	#Range: 0.0 ~ 32.0
+	shadowRadius = 10.0
+	#The shadow opacity of tooltip, if rounded. No impact on performance.
+	#Range: 0.0 ~ 1.0
+	shadowOpacity = 0.3499999940395355
+	#When true, tooltip border colors adapt to item's name and rarity.
+	adaptiveColors = true
 
 #General Config
 [general]
@@ -128,14 +143,27 @@
 	#The first font family to use. See fallbackFontFamilyList
 	firstFontFamily = "Source Han Sans CN Medium"
 	#A set of fallback font families to determine the typeface to use.
-	#TrueType & OpenType are supported. Each element can be one of the following two cases.
-	#1) Font family English name that registered to Modern UI, for instance: Segoe UI
-	#2) File path for external fonts on your PC, for instance: /usr/shared/fonts/x.otf
-	#Fonts under 'modernui:font' in resource packs and OS builtin fonts will be registered.
-	#Using bitmap fonts should consider other text settings, default glyph size should be 16x.
-	#This list is only read once when the game is loaded, or reloaded via in-game GUI.
+	#The order is first > fallbacks. TrueType & OpenType are supported.
+	#Each element can be one of the following two cases:
+	#1) Name of registered font family, for instance: Segoe UI
+	#2) Path of font files on your PC, for instance: /usr/shared/fonts/x.otf
+	#Registered font families include:
+	#1) OS builtin fonts.
+	#2) Font files in fontRegistrationList.
+	#3) Font files in '/resourcepacks' directory.
+	#4) Font files under 'modernui:font' in resource packs.
+	#Note that for TTC/OTC font, you should register it and select one of font families.
+	#Otherwise, only the first font family from the TrueType/OpenType Collection will be used.
+	#This is only read once when the game is loaded, you can reload via in-game GUI.
 	fallbackFontFamilyList = ["Noto Sans", "Segoe UI", "San Francisco", "Open Sans", "SimHei", "STHeiti", "Segoe UI Variable", "mui-i18n-compat"]
 	#Whether to use Google Noto Color Emoji, otherwise grayscale emoji (faster).
 	#See Unicode 15.0 specification for details on how this affects text layout.
 	useColorEmoji = true
+	#A set of additional font files (or directories) to register.
+	#For TrueType/OpenType Collections, all contained font families will be registered.
+	#Registered fonts can be referenced in Modern UI and Minecraft (Modern Text Engine).
+	#For example, "E:/Fonts" means all font files in that directory will be registered.
+	#System requires random access to these files, you should not remove them while running.
+	#This is only read once when the game is loaded, i.e. registration.
+	fontRegistrationList = []
 

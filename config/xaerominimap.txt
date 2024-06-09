@@ -127,9 +127,4 @@ infoDisplay:light_overlay_indicator:true:15:-1
 infoDisplay:manual_cave_mode_indicator:true:15:-1
 infoDisplay:custom_sub_world:true:15:-1
 seed:Multiplayer_mc.gugucraft.cn/dim%0_mw$default:8310754884526935587
-interface:dummy:0:36:true:false:false:false
-interface:dummy:0:10000:true:false:false:false
-interface:dummy:0:0:false:false:true:false
-interface:dummy:0:36:true:false:false:false
-interface:gui.xaero_minimap:162:20:false:false:true:false
-#WAYPOINTS HAVE BEEN MOVED TO /XaeroWaypoints
+module;id=xaerominimap:minimap;active=true;x=162;y=20;centered=false;fromRight=true;fromBottom=false;flippedVer=false;flippedHor=false;fromOldSystem=true;
