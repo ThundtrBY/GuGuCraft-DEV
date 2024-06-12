@@ -653,7 +653,7 @@ ServerEvents.recipes(event => {
       "item": "kubejs:incomplete_desh_tank"
     }
   })
-  event.recipes.create.item_application('ad_astra:ostrum_plating',['create:andesite_casing','ad_astra:ostrum_plate'])
+  event.recipes.create.item_application('ad_astra:ostrum_plating',['tfmg:heavy_machinery_casing','ad_astra:ostrum_plate'])
   event.recipes.create.sequenced_assembly([
 		Item.of('ad_astra:ostrum_tank')
 	], 'ad_astra:desh_tank', [

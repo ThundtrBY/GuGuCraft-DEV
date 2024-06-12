@@ -15,7 +15,8 @@ ServerEvents.recipes(e => {
         'tfmg:gasoline_engine',
         'tfmg:coal_coke',
         'tfmg:casting_basin',
-        'tfmg:casting_spout'
+        'tfmg:casting_spout',
+        'tfmg:steel_block'
     ]
     removal.forEach(i => {
         e.remove({output:`${i}`})
@@ -88,4 +89,5 @@ ServerEvents.recipes(e => {
         e.recipes.createFilling(transcoke, [transcoke, Fluid.water(100)]),
         e.recipes.createCutting(transcoke,transcoke)
 	]).transitionalItem(transcoke).loops(1)
+    e.recipes.create.compacting('tfmg:steel_block','9x #forge:ingots/steel')
 })

@@ -53,13 +53,15 @@ JEIEvents.hideItems(e =>{
                      'tfmg:lpg_engine',
                      'tfmg:gasoline_engine_back',
                      'tfmg:gasoline_engine',
+                     'tfmg:steel_ingot',
                      'kubejs:sealed_mechanism',
                      'kubejs:infernal_mechanism',
                      'kubejs:abstruse_mechanism',
                      'kubejs:integrational_mechanism',
                      'ae2:matter_cannon',
                      'ae2:inscriber',
-                     'ae2:facade'
+                     'ae2:facade',
+                     'create_dd:steel_ingot'
                     ]
     hideItems.forEach(i => {
         e.hide(i)
