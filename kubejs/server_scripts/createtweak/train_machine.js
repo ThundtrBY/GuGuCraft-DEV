@@ -10,8 +10,6 @@ event.stonecutting(result,'kubejs:train_machine')
 }
 event.remove({mod: 'kuayue'})
 cut('64x kuayue:standard_track')
-cut('64x kuayue:tieless_track')
-cut('64x kuayue:ballastless_track')
 event.custom({
   "type": "chipped:mason_table",
   "tags": ["kubejs:kuayue_blocks"]
