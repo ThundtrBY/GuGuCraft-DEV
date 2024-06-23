@@ -115,12 +115,13 @@ ServerEvents.recipes(event =>{
   
     ]
   })
+  event.stonecutting('8x kubejs:ingot_mold','create:andesite_casing')
   event.recipes.create.filling('kubejs:molten_steel_ingot_mold',[Fluid.of("tfmg:molten_steel",144),'kubejs:ingot_mold'])
   event.recipes.create.splashing(['ad_astra:steel_ingot','kubejs:ingot_mold'],'kubejs:molten_steel_ingot_mold')
   BlockCrafting.addMultiblockStructure(MultiblockStructureFileBuilder.create("kubejs:universal_catalyst")
     .file("structures/ucatalyst.nbt")
     .center(Blocks.AMETHYST_BLOCK)
-    .craftingItem("kubejs:integrational_mechanism")
+    .craftingItem("create:wrench")
     .resultItem("kubejs:universal_catalyst")
     .build()
   )

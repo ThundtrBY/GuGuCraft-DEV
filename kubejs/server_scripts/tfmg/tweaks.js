@@ -16,7 +16,8 @@ ServerEvents.recipes(e => {
         'tfmg:coal_coke',
         'tfmg:casting_basin',
         'tfmg:casting_spout',
-        'tfmg:steel_block'
+        'tfmg:steel_block',
+        'tfmg:heavy_plate'
     ]
     removal.forEach(i => {
         e.remove({output:`${i}`})
@@ -90,4 +91,12 @@ ServerEvents.recipes(e => {
         e.recipes.createCutting(transcoke,transcoke)
 	]).transitionalItem(transcoke).loops(1)
     e.recipes.create.compacting('tfmg:steel_block','9x #forge:ingots/steel')
+    let transheavyplate = 'tfmg:unprocessed_heavy_plate'
+    e.recipes.create.sequenced_assembly([
+      Item.of('tfmg:heavy_plate').withCount(1)
+    ], '#forge:ingots/steel', [ 
+      e.recipes.createDeploying(transheavyplate, [transheavyplate, '#forge:ingots/steel']),
+          e.recipes.createPressing(transheavyplate, transheavyplate),
+              e.recipes.createPressing(transheavyplate, transheavyplate)
+    ]).transitionalItem(transheavyplate).loops(1)
 })

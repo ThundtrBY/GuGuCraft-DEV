@@ -5,6 +5,7 @@ ServerEvents.recipes(event => {
   event.remove({output:'ad_astra:netherite_space_suit'})
   event.remove({output:'ad_astra:netherite_space_pants'})
   event.remove({output:'ad_astra:netherite_space_boots'})
+  event.remove({output:'ad_astra:jet_suit'})
   event.custom({
     "type": "minecraft:smithing_transform",
     "addition": {

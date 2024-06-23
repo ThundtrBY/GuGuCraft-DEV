@@ -1,5 +1,6 @@
 ServerEvents.recipes(e => {
     let transmatrix = 'kubejs:incomplete_matrix'
+    e.remove({id:'create:splashing/sand'})
     e.remove({output:'ae2:matter_cannon'})
     e.remove({output:'ae2:sky_dust'})
     e.remove({output:'ae2:silicon'})
@@ -46,7 +47,7 @@ ServerEvents.recipes(e => {
 	]).transitionalItem(transmatrix).loops(3)
     for (var i = 0; i < 10; i++)
       e.recipes.create.emptying(Fluid.of(`kubejs:number_${i}`,144),`kubejs:${i}`)
-    e.recipes.create.splashing([Item.of('kubejs:sand_ball').withChance(0.5)],'minecraft:sand')
+    e.recipes.create.splashing([Item.of('kubejs:sand_ball').withChance(0.5),Item.of('minecraft:clay_ball').withChance(0.25)],'minecraft:sand')
     e.recipes.create.emptying([Fluid.of('kubejs:fine_sand',500),'kubejs:rough_sand'],'kubejs:sand_ball')
     e.custom({
       "type": "ae2:transform",
