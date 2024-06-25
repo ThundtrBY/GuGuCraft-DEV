@@ -53,3 +53,4 @@ config/embeddium-options.json
 config/railways-client.toml
 config/fml.toml
 config/youkaishomecoming-common.toml
+config/packetfixer.properties
