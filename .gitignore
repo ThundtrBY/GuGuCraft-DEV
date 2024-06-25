@@ -54,3 +54,4 @@ config/railways-client.toml
 config/fml.toml
 config/youkaishomecoming-common.toml
 config/packetfixer.properties
+.probe/

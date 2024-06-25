@@ -1,0 +1,77 @@
+JEIEvents.hideItems(e =>{
+    let hideItems = ['createaddition:electric_motor',
+                     'createaddition:creative_energy',
+                     'createaddition:redstone_relay',
+                     'createaddition:barbed_wire',
+                     'createaddition:portable_energy_interface',
+                     'createaddition:biomass',
+                     'createaddition:biomass_pellet',
+                     'createaddition:electrum_amulet',
+                     'createaddition:electrum_ingot',
+                     'createaddition:electrum_nugget',
+                     'createaddition:electrum_sheet',
+                     'createaddition:electrum_wire',
+                     'createaddition:electrum_spool',
+                     'createaddition:electrum_rod',
+                     'createaddition:zinc_sheet',
+                     'ad_astra:tier_4_rocket',
+                     'ad_astra:tier_1_rover',
+                     'ad_astra:jet_suit_boots',
+                     'ad_astra:jet_suit_pants',
+                     'ad_astra:jet_suit_suit',
+                     'ad_astra:jet_suit_helmet',
+                     'ad_astra:wrench',
+                     'ad_astra:hammer',
+                     'ad_astra:steel_cable',
+                     'ad_astra:desh_cable',
+                     'ad_astra:desh_fluid_pipe',
+                     'ad_astra:ostrum_fluid_pipe',
+                     'ad_astra:cable_duct',
+                     'ad_astra:fluid_pipe_duct',
+                     'ad_astra:coal_generator',
+                     'ad_astra:compressor',
+                     'ad_astra:nasa_workbench',
+                     'ad_astra:fuel_refinery',
+                     'ad_astra:solar_panel',
+                     'ad_astra:water_pump',
+                     'ad_astra:energizer',
+                     'ad_astra:cryo_freezer',
+                     'ad_astra:oxygen_sensor',
+                     'ad_astra:calorite_nugget',
+                     'ad_astra:wheel',
+                     'ad_astra:calorite_tank',
+                     'ad_astra:calorite_engine',
+                     'tfmg:low_grade_fuel_engine',
+                     'tfmg:compact_engine',
+                     'tfmg:large_radial_engine',
+                     'tfmg:radial_engine',
+                     'tfmg:diesel_engine_expansion',
+                     'tfmg:diesel_engine',
+                     'tfmg:turbine_engine_back',
+                     'tfmg:turbine_engine',
+                     'tfmg:lpg_engine_back',
+                     'tfmg:lpg_engine',
+                     'tfmg:gasoline_engine_back',
+                     'tfmg:gasoline_engine',
+                     'tfmg:steel_ingot',
+                     'kubejs:sealed_mechanism',
+                     'kubejs:infernal_mechanism',
+                     'kubejs:abstruse_mechanism',
+                     'kubejs:integrational_mechanism',
+                     'ae2:matter_cannon',
+                     'ae2:inscriber',
+                     'ae2:facade',
+                     'create_dd:steel_ingot'
+                    ]
+    hideItems.forEach(i => {
+        e.hide(i)
+    })
+    Ingredient.of('/kubejs:incomplete./').itemIds.forEach(i =>{
+        e.hide(i)
+    })
+})
+JEIEvents.addItems(e => {
+    e.add(Item.of('create:refined_radiance_casing'))
+    e.add(Item.of('create:shadow_steel_casing'))
+    e.add(Item.of('ae2:facade').withNBT({item:"minecraft:stone"}))
+})

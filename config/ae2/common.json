@@ -80,7 +80,7 @@
   },
   "Condenser": {
     "MatterBalls": 256,
-    "Singularity": 256000
+    "Singularity": 0
   },
   "tickRates": {
     "_comment": " Min / Max Tickrates for dynamic ticking, most of these components also use sleeping, to prevent constant ticking, adjust with care, non standard rates are not supported or tested.",
