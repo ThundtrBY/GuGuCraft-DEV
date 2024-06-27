@@ -94,9 +94,21 @@ ServerEvents.recipes(e => {
     let transheavyplate = 'tfmg:unprocessed_heavy_plate'
     e.recipes.create.sequenced_assembly([
       Item.of('tfmg:heavy_plate').withCount(1)
-    ], '#forge:ingots/steel', [ 
+    ], '#forge:plates/steel', [ 
       e.recipes.createDeploying(transheavyplate, [transheavyplate, '#forge:ingots/steel']),
           e.recipes.createPressing(transheavyplate, transheavyplate),
               e.recipes.createPressing(transheavyplate, transheavyplate)
     ]).transitionalItem(transheavyplate).loops(1)
+    let transsteelmech = 'tfmg:unfinished_steel_mechanism'
+    e.recipes.create.sequenced_assembly([
+      Item.of('tfmg:steel_mechanism').withChance(83.0),
+      Item.of('tfmg:aluminum_ingot').withChance(7.0),
+      Item.of('tfmg:screw').withChance(6.0),
+      Item.of('tfmg:heavy_plate').withChance(4.0)
+    ], 'tfmg:heavy_plate', [ 
+      e.recipes.createDeploying(transsteelmech, [transsteelmech, 'tfmg:screw']),
+          e.recipes.createDeploying(transsteelmech, [transsteelmech, '#forge:ingots/aluminum']),
+              e.recipes.createDeploying(transsteelmech, [transsteelmech, '#forge:plates/steel']),
+                  e.recipes.createDeploying(transsteelmech, [transsteelmech, '#kubejs:tools_screwdriver']),
+    ]).transitionalItem(transsteelmech).loops(3)
 })

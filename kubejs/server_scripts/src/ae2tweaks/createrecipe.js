@@ -70,20 +70,6 @@ ServerEvents.recipes(e =>{
         }
     )
     e.shaped(
-        Item.of('ae2:blank_pattern', 2),
-        [
-          'ABA',
-          'BDB',
-          'CCC'
-        ],
-        {
-          A: 'ae2:quartz_glass',
-          B: 'minecraft:redstone',
-          C: 'create:brass_sheet',
-          D: '#forge:gems/certus_quartz'
-        }
-    )
-    e.shaped(
         'ae2:memory_card',
         [
           '   ',
