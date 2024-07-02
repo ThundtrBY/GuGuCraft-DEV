@@ -1,4 +1,5 @@
 // priority: 0
+Platform.getInfo('kubejs').name = 'GuGuAddons'
 ItemEvents.toolTierRegistry (event =>{
   event.add('tool', tier =>{
     tier.uses = 250
